@@ -1,0 +1,174 @@
+{
+  "name": "ng-date-picker",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@nans13/react-bs-grid": "^1.0.1",
+    "moment": "^2.22.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-scripts": "1.1.4",
+    "shortid": "^2.2.12",
+    "styled-components": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "^23.0.1",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-class-properties": "^6.23.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-polyfill": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.23.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "body-parser": "^1.18.3",
+    "chai": "^4.0.2",
+    "chai-enzyme": "^1.0.0-beta.1",
+    "chai-jest-diff": "^1.0.2",
+    "chai-jest-snapshot": "^2.0.0",
+    "chalk": "^2.4.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "colors": "^1.3.0",
+    "copy-webpack-plugin": "^4.5.1",
+    "cross-env": "^5.2.0",
+    "css-loader": "^0.28.11",
+    "dirty-chai": "^2.0.0",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.4",
+    "eslint": "^4.19.1",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-import": "^2.12.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-prettier": "^2.6.0",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-react": "^7.9.1",
+    "eslint-plugin-standard": "^3.1.0",
+    "express": "^4.16.3",
+    "file-loader": "^1.1.11",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "hard-source-webpack-plugin": "^0.8.1",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.3.1",
+    "jest": "^23.1.0",
+    "jest-watch-typeahead": "^0.1.0",
+    "json5": "^1.0.1",
+    "mini-css-extract-plugin": "^0.4.0",
+    "morgan": "^1.9.0",
+    "node-notifier": "^5.2.1",
+    "npm-run-all": "^4.1.3",
+    "offline-plugin": "^5.0.5",
+    "optimize-css-assets-webpack-plugin": "^4.0.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.5",
+    "prettier": "^1.13.5",
+    "react-hot-loader": "^4.3.3",
+    "react-test-renderer": "^16.4.1",
+    "redbox-react": "^1.6.0",
+    "sinon": "^6.0.0",
+    "sinon-chai": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "svg-url-loader": "^2.3.2",
+    "url-loader": "^1.0.1",
+    "webpack": "^4.12.0",
+    "webpack-cli": "^3.0.7",
+    "webpack-dashboard": "^2.0.0",
+    "webpack-dev-middleware": "^3.1.3",
+    "webpack-dev-server": "^3.1.4",
+    "webpack-hot-middleware": "^2.22.2",
+    "webpack-merge": "^4.1.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "test:cov": "npm test -- --coverage",
+    "test:watch": "npm test -- --watchAll",
+    "eject": "react-scripts eject"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "browsers": [
+              "last 2 versions",
+              "> 1%",
+              "safari >= 10"
+            ],
+            "node": "current"
+          },
+          "useBuiltIns": true
+        }
+      ],
+      "react",
+      "stage-3"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-decorators-legacy"
+    ],
+    "env": {
+      "development": {
+        "plugins": [
+          "react-hot-loader/babel"
+        ]
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": [
+      "standard",
+      "prettier",
+      "plugin:react/recommended",
+      "plugin:jsx-a11y/recommended",
+      "plugin:import/errors"
+    ],
+    "plugins": [
+      "prettier",
+      "react",
+      "jsx-a11y",
+      "import"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "arrowParens": "always",
+          "semi": false,
+          "singleQuote": true,
+          "trailingComma": "es5"
+        }
+      ],
+      "no-irregular-whitespace": 0
+    },
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es6": true,
+      "jest": true,
+      "node": true
+    }
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "notify": true,
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ],
+    "setupTestFrameworkScriptFile": "<rootDir>/jest/setup.js",
+    "watchPlugins": [
+      "jest-watch-typeahead"
+    ]
+  }
+}
