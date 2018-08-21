@@ -1,21 +1,26 @@
-import React, { Component } from 'react';
-import DatePicker from './components/DatePicker'
+import React, { Component } from 'react'
+import InputDate from './components/InputDate'
 
 class App extends Component {
-  //withTime
-  render() {
-    
-      return (
-        <DatePicker 
-          weekDayOff={[1,7]}  
-          disableBeforeToday
-          // firstSelector="year"
-          // startPeriod="01/01/1986"
-          disabledDates={['24/07/2018', '26/07/2018']}
-          withTime
-        />    
-      );
-    }
+  // withTime
+  state = {
+    value: '18-03-1986',
+  }
+  onChange(e) {
+    // this.setState({ value: e.target.value })
   }
 
-export default App;
+  render() {
+    const { value } = this.state
+    return (
+      <InputDate
+        withTime
+        value={value}
+        handleChange={this.onChange}
+        disableBeforeToday
+      />
+    )
+  }
+}
+
+export default App

@@ -1,4 +1,9 @@
-import styled, { css } from 'styled-components';
+import styled, { css } from 'styled-components'
+
+export const SCCalendarModal = styled.div`
+  position: absolute;
+  z-index: 10000;
+`
 
 export const Calendar = styled.div`
   text-align: center;
@@ -8,23 +13,25 @@ export const Calendar = styled.div`
   background-color: #ffffff;
   padding: 5px;
   position: absolute;
-`;
+  z-index: 1000;
+  box-sizing: content-box;
+`
 
 export const PeriodSelector = styled.div`
   position: relative;
   height: 30px;
-`;
+`
 
 export const ContainerBlock = styled.div`
   margin: auto;
   display: inline-block;
-`;
+`
 
 export const PeriodDate = styled.div`
   text-align: center;
   padding-top: 5px;
   color: #2c3135;
-`;
+`
 export const PeriodButton = styled.div`
   cursor: pointer;
   position: absolute;
@@ -39,7 +46,7 @@ export const PeriodButton = styled.div`
     css`
       right: 15px;
     `};
-`;
+`
 
 export const MinuteSelector = styled.div`
   text-align: left;
@@ -50,7 +57,7 @@ export const MinuteSelector = styled.div`
     css`
       opacity: 0;
     `};
-`;
+`
 export const SimpleDisplay = styled.div`
   display: inline-block;
   margin: 3px;
@@ -58,7 +65,8 @@ export const SimpleDisplay = styled.div`
   padding: 5px 15px;
   font-size: 12px;
   color: #9b9b9b;
-`;
+  user-select: none;
+`
 export const DateValue = SimpleDisplay.extend`
     cursor: pointer;
     padding: 5px 20px;
@@ -85,4 +93,14 @@ export const DateValue = SimpleDisplay.extend`
         background-color: #27d7ab;
         color: #ffffff;
       `}
-`;
+`
+
+export const SCDayRow = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & > div {
+    flex: 1;
+  }
+`

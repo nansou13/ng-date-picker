@@ -1,7 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from 'react'
+import PropTypes from 'prop-types'
 
-import { DateValue } from './styles';
+import { DateValue } from './styles'
 
 const DayDisplay = ({ onHandleClick, value, disabled, selected }) => (
   <DateValue
@@ -11,13 +11,13 @@ const DayDisplay = ({ onHandleClick, value, disabled, selected }) => (
   >
     {value}
   </DateValue>
-);
+)
 
 DayDisplay.propTypes = {
   onHandleClick: PropTypes.func,
   value: PropTypes.string.isRequired,
   disabled: PropTypes.bool,
   selected: PropTypes.bool,
-};
+}
 
-export default DayDisplay;
+export default DayDisplay

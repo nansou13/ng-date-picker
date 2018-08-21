@@ -1,9 +1,9 @@
-export const YEAR_SELECTED = 'year';
-export const DAYS_SELECTED = 'days';
-export const MONTH_SELECTED = 'month';
+export const YEAR_SELECTED = 'year'
+export const DAYS_SELECTED = 'days'
+export const MONTH_SELECTED = 'month'
 
-export const MAX_YEARS = 21;
-export const MAX_DAYS = 41;
+export const MAX_YEARS = 21
+export const MAX_DAYS = 41
 
 export const CONF = {
   days: {
@@ -27,4 +27,4 @@ export const CONF = {
     addPeriodWhile: 'Y',
     moduloValue: 4,
   },
-};
+}
